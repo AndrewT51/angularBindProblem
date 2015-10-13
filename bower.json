@@ -1,0 +1,25 @@
+{
+  "name": "todoList",
+  "version": "0.0.0",
+  "homepage": "https://github.com/AndrewT51/practiseFolder",
+  "authors": [
+    "Andrew Trigg <andrewt51@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css": "~3.3.4",
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15"
+  }
+}
