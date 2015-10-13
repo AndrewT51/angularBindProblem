@@ -15,20 +15,21 @@
 </div>
 <div class="row">
   <table class='col-xs-12'>
-    {{taskArray}}
-    <th class='col-xs-3'></th>
+    <th class='col-xs-3'>Status</th>
     <th class='col-xs-3'>Task</th>
     <th class='col-xs-3'>At the latest</th>
     <th class='col-xs-3'>Remove</th>
     
 
-    <!-- 
-    <tr ng-repeat='singleTask in taskArray track by $index'>
-      <td></td>
+    
+    <tr ng-repeat='singleTask in taskArray track by $index | orderBy: "-singleTask.date": false'>
+      <td><input   type='checkbox' ng-click='change(singleTask)' ng-checked='singleTask.status' ></input>{{taskDetails.status}}</td>
       <td>{{singleTask.task}}</td>
       <td>{{singleTask.date|date}}</td>
-      <!-- <td>{{singleTask.task}}</td> -->
+      <td><button ng-click='removeTask(singleTask)' ng-show='singleTask.status'>Delete</button></td>
       
-    </tr> -->
+
+    </tr>
   </table>
 </div>
+
