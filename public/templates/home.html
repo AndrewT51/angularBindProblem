@@ -6,9 +6,10 @@
     </div>
     <div class="form-group">
       <label for="date">At the latest:</label>
-      <input ng-model='taskDetails.date' name='date' type="date" class="form-control" >
+      <input ng-model='taskDetails.date' name='date' type="date" class="form-control" required>
     </div>
     <button ng-click='addTask()' type="button" class="btn btn-default">Submit</button>
+    <span ng-show='reminder' ng-hide='!reminder' class='warning'> Please make sure you have entered a task and a date</span>
   </form>
   <hr>
 
